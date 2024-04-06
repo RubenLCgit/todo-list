@@ -3,6 +3,8 @@
 Esta aplicación To-Do demuestra el poder de Vue.js combinado con Vuetify, ofreciendo una experiencia de usuario intuitiva y visualmente atractiva. 
 Ademas dispone de un archivo Dockerfile para poder crear una imagen de Docker con ella y esta subida a mi repositorio de Docker Hub.
 
+Dirección a mi Docker Hub:
+
 https://hub.docker.com/u/rubenlcdocker
 
 ## Características
