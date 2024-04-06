@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: todo-list
+spec:
+    replicas: 2
+    selector:
+        matchLabels:
+            app: todo-list
+    template:
+        metadata:
+            labels:
+                app: todo-list
+        spec:
+            containers:
+              - name: todo-list
+                image: rubenlcdocker/vue-todolist:1.0
+                ports:
+                - containerPort: 80
+                resources:
+                    requests:
+                        memory: "64Mi"
+                        cpu: "80m"
+                    limits:
+                        memory: "128Mi"
+                        cpu: "250m"
